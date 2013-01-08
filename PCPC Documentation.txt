@@ -1,0 +1,93 @@
+// by Peter Li
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// v1.14 - 12/14/11
+// - Massive efficiency improvements
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// v1.13 - 11/25/11
+// - Audio features
+// - Added random color methods
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// v1.12 - 11/20/11
+// - Implemented MouseListener
+// - Implemented MouseMotionListener
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// v1.11 - 11/17/11
+// - File IO features
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// v1.1 - 11/04/11
+// - Added graphics panel
+// - Added Graphics2D drawing capabilities
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// v1.0 - 10/02/11
+// - Initial Release
+// - Basic IO features
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To use this console, create a new console object. Parameters 
+may include the length and width of the program:
+eg) PCPC c = new PCPC ();
+    PCPC c = new PCPC (1920,1080);
+
+Graphics:
+To use graphics, create a new graphics object with getGraphics ();
+eg) Graphics g = c.getGraphics (); //c is the PCPC console object
+
+Then you will be able to use the default library of graphic methods.
+eg) g.drawLine (); 
+    g.fillRect ();
+
+
+Methods:
+
+cls (); 				- Clears graphics canvas
+clt ();					- Clears TextArea
+ViewUpdate ();				- Updates canvas (double buffering)
+
+getCanvasWidth ();			- Gets canvas width
+getCanvasHeight ();			- Gets canvas height
+
+randColor ();				- Gets random color
+randBlue ();				- Gets random blue
+randGreen ();				- Gets random green
+randRed ();				- Gets random red
+
+getMouseX ();				- Gets mouse X coord
+getMouseY ();				- Gets mouse Y coord
+getClick ();				- Gets mouse click status
+getRelease ();				- Gets mouse release status
+getKey ();				- Gets key input
+getKeyR ();				- Gets key release
+getText ();				- Gets textfield text
+
+delay (int i); 				- Delays current thread
+randInt (int i);			- Generates random number
+
+getString ();				- Gets string input
+getChar ();				- Gets char input
+getInt ();				- Gets int input
+getLong	();				- Gets long input
+getFloat ();				- Gets float input
+getDouble ();				- Gets double input
+getShort ();				- Gets short input
+
+readFile (String file, int line);	- Reads line from file
+writeFile (String text, String file);	- Writes text to file
+appendFile (String text, String file);	- Appends text to file
+
+playAudio (String file);		- Plays audio
+loopAudio (String file);		- Loops audio
+
+
+Limitations:
+
+Methods apart from those available will have to be self implemented.
+PCPC provides:
+- Audio playing/looping
+- Graphics panel (double buffered)
+- Text I/O panel
+- File I/O
+- MouseListener statuses
+- KeyListener statuses
+- MouseMotionListener statuses
+- Random function
+- Delay function

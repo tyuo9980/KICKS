@@ -1,0 +1,142 @@
+/////////////////////////////////////
+BY PETER LI
+  December 20th, 2011
+  KICKS.java
+/////////////////////////////////////
+
+PROJECT LOG
+
+12/20/11
+~~~~~~~~
+- Researched on QIX and game mechanics
+
+12/21/11
+~~~~~~~~
+- Brain storming ideas on collision detection, area calculating, etc.
+
+12/22/11
+~~~~~~~~
+- Started programming
+- Designed basic game layout including text placements and colour scheme.
+
+12/23/11
+~~~~~~~~
+- Began programming of control interface
+
+12/24/11
+~~~~~~~~
+- Completed control interface
+- Started collision detection
+
+12/25/11
+~~~~~~~~
+- Completed collision detection
+- Started player movement
+
+12/26/11
+~~~~~~~~
+- Completed movement
+- Added leaderboard rankings
+- Added game menu
+
+12/27/11
+~~~~~~~~
+- Started area calculation algorithm
+
+12/28/11
+~~~~~~~~
+- Started enemy AI
+- completed area algorithm using flood fill
+
+12/29/11
+~~~~~~~~
+- Completed enemy AI
+- Game complete
+- Initial game build and release
+
+12/30/11
+~~~~~~~~
+- General efficiency improvements
+- General bug fixes
+
+12/31/11
+~~~~~~~~
+- Changed area algorithm to implement a queue and prevent stack overflow
+
+
+Build History:
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// v1.02 - 12/31/11
+// - Implemented queued flood fill
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// v1.01 - 12/30/11
+// - Bug fixes
+// - Efficiency improvements
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// v1.0 - 12/29/11
+// - Initial Release
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+/////////////////////////
+//About & Instructions
+/////////////////////////
+
+Qix is a long lost arcade classic.
+
+Your goal is to fill in as much of the board as you can
+without the Qix coming into contact with your 'drawer'
+while you are in the middle of drawing a line.
+
+Use the directional arrow keys to move and hold Z
+to start creating your 'drawer'.
+
+Occupy 75% of the field to complete the round.
+
+
+/////////////////////////
+//System Requirements
+/////////////////////////
+
+CPU: Pentium 4 2.0GHz+
+RAM: 256MB+
+GPU: Integrated
+APU: N/A
+Peripherals: Keyboard and Mouse
+
+
+/////////////////////////
+//Functions
+/////////////////////////
+
+- Bubblesort to sort leaderboard score rankings
+- Queue-implemented flood fill algorithm for area calculations
+- Scanline area filling
+
+/////////////////////////
+//Included Files
+/////////////////////////
+
+- KICKS.java
+- PCPC.java
+- qix.ttf
+- KICKS Leaderboard.kf
+- KICKS Documentation.txt
+- PCPC Documentation.txt
+
+/////////////////////////
+//Troubleshooting
+/////////////////////////
+
+All files must be put in the same directory.
+
+Leaderboard errors may be a cause of deletion or corruption of data.
+Re-install program to fix. This will delete all previous scores.
+
+Make sure that the java class and file names are the exact same.
+If they are different, it will cause the program to be unable to
+execute.
+
+
+
